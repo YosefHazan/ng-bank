@@ -8,6 +8,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { ActionComponent } from './pages/action/action.component';
 import { ActionsSummaryComponent } from './pages/actions-summary/actions-summary.component';
+import { NavComponent } from './comp/nav/nav.component';//step 12
+import { AboutComponent } from './comp/about/about.component';
+import { ActionDisplayItemComponent } from './comp/action-display-item/action-display-item.component';// step 12
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { ActionsSummaryComponent } from './pages/actions-summary/actions-summary
     RegisterComponent,
     SummaryComponent,
     ActionComponent,
-    ActionsSummaryComponent
+    ActionsSummaryComponent,
+    NavComponent,//step 13
+    AboutComponent, ActionDisplayItemComponent//step 13
   ],
   imports: [
     BrowserModule,

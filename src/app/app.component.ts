@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-bank';
+  constructor(private router:Router){} //step 10
+  
+  //step 11
+  isLoginPage():boolean{
+    return this.router.url == '/login';
+  }
 }
+

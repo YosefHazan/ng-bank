@@ -12,12 +12,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let a of actions" 
-        routerLink="/actions-summary/{{a.id}}">
-            <td>{{a.id}}</td>
-            <td>{{a.AccountId}}</td>
-            <td>{{a.Type}}</td>
-            <td>{{a.Amount}}</td>
-        </tr>
+        <!--part b step 2-->
+        <action-display-item
+            [action]="a"
+            (zeClick)="iHearZeClick($event)"
+            *ngFor="let a of actions" >
+    </action-display-item>
     </tbody>
 </table>

@@ -21,4 +21,8 @@ export class ActionsSummaryComponent implements OnInit {
       this.actions = this.db.getAccountsActionsByAccountId(this._accountID)
     })
   }
+  //part b step 7
+  iHearZeClick(somestring:string){
+    console.log(somestring);
+  }
 }
